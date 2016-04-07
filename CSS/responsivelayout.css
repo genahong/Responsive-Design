@@ -1,0 +1,95 @@
+* { -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; }
+	
+aside, span {display: none;}
+
+nav {
+	width: 60%;
+/*	margin-left: -40px;*/
+}
+
+aside {background-color: yellow;
+	height: 100px;
+	float: right;
+	width: 100px;
+	border: 5px solid white;
+
+}
+
+ul {
+	overflow: hidden;
+	padding:0px;
+}
+
+li {
+	list-style-type: none;
+	float: left;
+	height: 100px;
+	width: 25%;
+	background-color: gray;
+	border: 5px solid white;
+/*could have dont this with inline block*/
+}
+
+main { 
+	clear: left;
+	height: 300px;
+	background-color: pink; 
+	border: 5px solid white;}
+
+.photos {
+	height: 300px;
+	width: 25%;
+	float: left;
+	background-color: blue;
+	/*margin: 10px;*/
+	border: 5px solid white;
+
+}
+
+footer {
+	clear: left;
+}
+
+.blogposts {
+	height: 300px;
+	width: 33.33%;
+	float: left;
+	background-color: orange;
+	border: 5px solid white;
+}
+
+
+@media screen and (max-width: 500px) {
+
+	aside {
+		width: 100%;
+		float: none; 
+	}
+
+	ul {display: none;}
+
+	.photos, .blogposts {
+		width: 100%;
+	}
+
+	#lastphoto {
+		display: none;
+	}
+
+	aside, span {
+		display: block;
+	}
+
+	li {
+		width: 100%;
+/*		display: block;*/
+		float: none;
+	}
+
+	nav {
+		width: 100%;
+	}
+
+}
